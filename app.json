@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "groceryApp",
+    "slug": "groceryApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.groceryApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./Src/Assets/fonts/Gilroy-SemiBold.ttf",
+            "./Src/Assets/fonts/Gilroy-Bold.ttf",
+            "./Src/Assets/fonts/Gilroy-ExtraBold.ttf",
+            "./Src/Assets/fonts/Gilroy-Medium.ttf",
+            "./Src/Assets/fonts/Gilroy-Regular.ttf"
+          ]
+        }
+      ]
+    ]
+  }
+}
