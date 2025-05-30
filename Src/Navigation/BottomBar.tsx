@@ -51,7 +51,7 @@ const BottomBar = () => {
         name="home"
         component={HomeScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
+          tabBarIcon: ({ focused }:any) => {
             return focused ? (
               <View
                 style={{
@@ -129,7 +129,7 @@ const BottomBar = () => {
         name="explore"
         component={ExporeScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
+          tabBarIcon: ({ focused }:any) => {
             return focused ? (
               <View
                 style={{
@@ -207,7 +207,7 @@ const BottomBar = () => {
         name="cart"
         component={CartScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
+          tabBarIcon: ({ focused }:any) => {
             return focused ? (
               <View
                 style={{
@@ -282,7 +282,7 @@ const BottomBar = () => {
         name="favourite"
         component={FavoriteScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
+          tabBarIcon: ({ focused }:any) => {
             return focused ? (
               <View
                 style={{
@@ -355,7 +355,7 @@ const BottomBar = () => {
         name="profile"
         component={ProfileScreen}
         options={{
-          tabBarIcon: ({ focused }) => {
+          tabBarIcon: ({ focused }:any) => {
             return focused ? (
               <View
                 style={{
@@ -434,4 +434,3 @@ const BottomBar = () => {
 
 export default BottomBar;
 
-const styles = StyleSheet.create({});

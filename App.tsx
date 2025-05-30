@@ -7,6 +7,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import OnBoardScreen from "./Src/Screens/OnBoardScreen/OnBoardScreen";
 import BottomBar from "./Src/Navigation/BottomBar";
 import { NavigationContainer } from "@react-navigation/native";
+import MainStackScreen from "./Src/Navigation/MainStack";
 
 const loadFonts = () => {
   return Font.loadAsync({
@@ -31,9 +32,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <StatusBar style="dark" />
-      <NavigationContainer>
-        <BottomBar />
-      </NavigationContainer>
+        <MainStackScreen/>
     </SafeAreaProvider>
   );
 }

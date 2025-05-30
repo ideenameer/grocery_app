@@ -1,5 +1,5 @@
 import { SafeAreaView, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import SplashScreenStyles from "./SplashScreenStyles";
 import { SvgXml } from "react-native-svg";
 import { logo } from "../../Assets/images/logo";
@@ -8,8 +8,15 @@ import {
   getWidthEquivalent,
 } from "../../Helpers/Utilities/Utilities";
 import { StatusBar } from "expo-status-bar";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }:any) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.replace("BottomBar");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <View style={SplashScreenStyles.container}>
       <StatusBar style="light"/>

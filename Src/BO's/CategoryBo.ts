@@ -1,4 +1,5 @@
 export interface CategoryBO {
-  title: string;
-  categoryImage: string;
+  id: number,
+  name: string,
+  image:string,
 }

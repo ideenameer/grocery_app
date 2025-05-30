@@ -67,9 +67,9 @@ export const HomeScreenStyles = StyleSheet.create({
   carouselContainer: {
     height: getHeightEquivalent(114.99),
     width: getWidthEquivalent(368),
-    borderWidth: 1,
-    borderColor: "red",
     alignSelf: "center",
+    borderRadius:8,
+    overflow:"hidden",
   },
   divisionContainer: {
     height: getHeightEquivalent(29),
@@ -151,4 +151,21 @@ export const HomeScreenStyles = StyleSheet.create({
     marginTop: getHeightEquivalent(187.84),
     marginLeft: getWidthEquivalent(113.66),
   },
+  categoryList:{
+    height: getHeightEquivalent(105),
+    width: "100%",
+    alignSelf: "center",
+    marginBottom:getHeightEquivalent(20)
+  },
+  categoryCard:{
+    height:getHeightEquivalent(105),
+    width:getWidthEquivalent(250),
+    borderRadius:18,
+    borderWidth:1,
+    borderColor:"red",
+    backgroundColor:"#F8A44C",
+    marginRight:getWidthEquivalent(15),
+    alignItems:"center",
+    justifyContent:"center"
+  }
 });
